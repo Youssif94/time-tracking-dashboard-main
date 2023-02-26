@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.profile-content > img {
+  object-fit: contain;
+  width: 60px;
+  height: 60px;
+}
+.profile {
+  /* width: 330px; */
+  background-color: hsl(235, 46%, 20%);
+}
+
+.profile-content {
+  width: fit-content;
+  height: 60%;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+  padding: 20px 30px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.time {
+  background-color: hsl(235, 46%, 20%);
+  color: hsla(236, 42%, 67%, 0.341);
+  width: min-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+  cursor: pointer;
+}
+.time > p:hover {
+  color: white;
+}
+
+.row {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.activities {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 800px;
+}
+
+.activities > div {
+  width: 205px;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+  border-radius: 10px;
+}
+.play > .img {
+  background-color: hsl(195, 74%, 62%);
+}
+.study > .img {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise > .img {
+  background-color: hsl(145, 58%, 55%);
+}
+.social > .img {
+  background-color: hsl(264, 64%, 52%);
+}
+.self-care > .img {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.img {
+  /* background-color: hsl(15, 100%, 70%); */
+  text-align: end;
+  border-radius: 10px 10px 0px 0px;
+  height: 40px;
+}
+.img > img {
+  object-fit: none;
+  height: 50px;
+  width: 70px;
+}
+
+.work-content {
+  padding: 30px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 9px;
+}
+
+.work-content * {
+  margin: 5px 0px;
+}
+
+.work-content > h3 {
+  font-size: 32px;
+}
+
+.activity > div:nth-child(2) > div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.work-content:hover {
+  background-color: hsl(235, 45%, 61%);
+}
+
+.work-content > div > p:nth-child(2) {
+  font-size: 16px;
+  cursor: pointer;
+}
+.work-content > div > p:nth-child(2):hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: auto;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+  }
+  .profile-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85vw;
+  }
+  .profile {
+    width: 85vw;
+  }
+  .activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .activities > div {
+    width: 100%;
+  }
+  .time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  .work-content > h3 {
+    display: inline;
+  }
+}
